@@ -23,3 +23,12 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    # Register Shift4PaymentService
+    App\Service\Shift4PaymentService:
+        arguments:
+            $shift4ApiKey: '%env(SHIFT4_API_KEY)%'
+
+    App\Service\AciPaymentService:
+        arguments:
+            $aciApiKey: '%env(ACI_API_KEY)%'
