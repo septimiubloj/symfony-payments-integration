@@ -47,8 +47,7 @@ Returns a JSON object with the transaction details, such as `transaction_id`, `d
 
 ##### Example Command:
 
-```
-bash
+```bash
 bin/console app:payment shift4
 ```
 
